@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html>
+   <head>
+    <style>
+      .bg {
+        background-color: black;
+      }
+       .title {
+        font-weight: bold;
+        font-size: 25px;
+        color: #FFF5EE;
+        padding-top: 40px;
+        padding-bottom: 10px;
+        font-family: 'Questrial', sans-serif;
+      }
+       .name {
+        font-weight: bold;
+        font-size: 15px;
+        color: #FFF5EE;
+        padding-top: 20px;
+        font-family: 'Questrial', sans-serif;
+       }
+       .header{
+        font-weight: bold;
+        font-size: 30px;
+        color: #FFF5EE;
+        padding-top: 30px;
+        padding-bottom: 20px;
+        font-family: 'Questrial', sans-serif;
+       }
+       #logo{
+        height: 150px;
+       }
+       #youtube{
+        padding: 30px;
+        padding-top: 40px;
+       }
+       #band-cover{
+        padding-top: 20px;
+       }
+       #spotify{
+        padding: 20px;
+       }
+       #description{
+        color: #666666;
+        font-size: 1.2rem;
+        font-family: 'Questrial', sans-serif;
+       }
+       .instrument{
+        font-weight: bold;
+        color: #808080;
+        font-family: 'Questrial', sans-serif;
+       }
+       .bio{
+        color: #666666;
+        font-family: 'Questrial', sans-serif;
+       }
+       .booking{
+        color: #666666;
+        padding-bottom: 20px;
+        font-family: 'Questrial', sans-serif;
+       }
+       .contact{
+        font-weight: bold;
+        color: #FFF5EE;
+        font-family: 'Questrial', sans-serif;
+
+       }
+       .contact-name{
+        font-weight: bold;
+        color: #808080;
+       }
+       .method{
+        color: #666666;
+        padding-bottom: 15px;
+       }
+       .bottom-space{
+        padding-bottom: 100px;
+       }
+       .fb{
+        border:none;
+        overflow:hidden;
+       }
+
+
+       .navbar {
+          background-color: #000000;
+        }
+        .navbar .navbar-brand {
+          color: #b4b6b6;
+        }
+        .navbar .navbar-brand:hover,
+        .navbar .navbar-brand:focus {
+          color: #fffafa;
+        }
+        .navbar .navbar-text {
+          color: #b4b6b6;
+        }
+        .navbar .navbar-text a {
+          color: #fffafa;
+        }
+        .navbar .navbar-text a:hover,
+        .navbar .navbar-text a:focus {
+          color: #fffafa; 
+        }
+        .navbar .navbar-nav .nav-link {
+          color: #b4b6b6;
+          border-radius: .25rem;
+          margin: 0 2em;
+          font-family: 'Questrial', sans-serif;
+        }
+        .navbar .navbar-nav .nav-link:not(.disabled):hover,
+        .navbar .navbar-nav .nav-link:not(.disabled):focus {
+          color: #fffafa;
+        }
+        .navbar .navbar-nav .nav-item.active .nav-link,
+        .navbar .navbar-nav .nav-item.active .nav-link:hover,
+        .navbar .navbar-nav .nav-item.active .nav-link:focus,
+        .navbar .navbar-nav .nav-item.show .nav-link,
+        .navbar .navbar-nav .nav-item.show .nav-link:hover,
+        .navbar .navbar-nav .nav-item.show .nav-link:focus {
+          color: #fffafa;
+          background-color: #000000;
+        }
+        .navbar .navbar-toggle {
+          border-color: #000000;
+        }
+        .navbar .navbar-toggle:hover,
+        .navbar .navbar-toggle:focus {
+          background-color: #000000;
+        }
+        .navbar .navbar-toggle .navbar-toggler-icon {
+          color: #b4b6b6;
+        }
+        .navbar .navbar-collapse,
+        .navbar .navbar-form {
+          border-color: #b4b6b6;
+        }
+        .navbar .navbar-link {
+          color: #b4b6b6;
+          font-family: 'Questrial', sans-serif;
+        }
+        .navbar .navbar-link:hover {
+          color: #fffafa;
+        }
+
+
+        @media (max-width: 575px) {
+          .navbar-expand-sm .navbar-nav .show .dropdown-menu .dropdown-item {
+            color: #b4b6b6;
+          }
+          .navbar-expand-sm .navbar-nav .show .dropdown-menu .dropdown-item:hover,
+          .navbar-expand-sm .navbar-nav .show .dropdown-menu .dropdown-item:focus {
+            color: #fffafa;
+          }
+          .navbar-expand-sm .navbar-nav .show .dropdown-menu .dropdown-item.active {
+            color: #fffafa;
+            background-color: #000000;
+          }
+        }
+
+        @media (max-width: 767px) {
+          .navbar-expand-md .navbar-nav .show .dropdown-menu .dropdown-item {
+            color: #b4b6b6;
+          }
+          .navbar-expand-md .navbar-nav .show .dropdown-menu .dropdown-item:hover,
+          .navbar-expand-md .navbar-nav .show .dropdown-menu .dropdown-item:focus {
+            color: #fffafa;
+          }
+          .navbar-expand-md .navbar-nav .show .dropdown-menu .dropdown-item.active {
+            color: #fffafa;
+            background-color: #000000;
+          }
+        }
+
+        @media (max-width: 991px) {
+          .navbar-expand-lg .navbar-nav .show .dropdown-menu .dropdown-item {
+            color: #b4b6b6;
+          }
+          .navbar-expand-lg .navbar-nav .show .dropdown-menu .dropdown-item:hover,
+          .navbar-expand-lg .navbar-nav .show .dropdown-menu .dropdown-item:focus {
+            color: #fffafa;
+          }
+          .navbar-expand-lg .navbar-nav .show .dropdown-menu .dropdown-item.active {
+            color: #fffafa;
+            background-color: #000000;
+          }
+        }
+
+        @media (max-width: 1199px) {
+          .navbar-expand-xl .navbar-nav .show .dropdown-menu .dropdown-item {
+            color: #b4b6b6;
+          }
+          .navbar-expand-xl .navbar-nav .show .dropdown-menu .dropdown-item:hover,
+          .navbar-expand-xl .navbar-nav .show .dropdown-menu .dropdown-item:focus {
+            color: #fffafa;
+          }
+          .navbar-expand-xl .navbar-nav .show .dropdown-menu .dropdown-item.active {
+            color: #fffafa;
+            background-color: #000000;
+          }
+        }
+
+        .navbar-expand .navbar-nav .show .dropdown-menu .dropdown-item {
+          color: #b4b6b6;
+        }
+        .navbar-expand .navbar-nav .show .dropdown-menu .dropdown-item:hover,
+        .navbar-expand .navbar-nav .show .dropdown-menu .dropdown-item:focus {
+          color: #fffafa;
+        }
+        .navbar-expand .navbar-nav .show .dropdown-menu .dropdown-item.active {
+          color: #fffafa;
+          background-color: #000000;
+        }
+
+    </style>
+
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Questrial">
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v6.0"></script>
+  </head>
+  <nav class="navbar navbar-expand-lg static-top">
+    <div class="container">
+      <a class="navbar-brand" href="#top">
+            <img id = "logo" class = "img-fluid" src="./images/bbw_logo.png">
+          </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#band">ABOUT</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#events">UPCOMING EVENTS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#listen">LISTEN</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#bookings">BOOKINGS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#email-list">EMAIL LIST</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <body class = "bg">
+    <div class = "container">
+      <div class = "row-fluid bg">
+        <div id = "top" class = "row">              
+        </div>
+        <div class = "row">
+           <img id = "band-cover" class = "img-fluid" src = "./images/band_cover1.jpg">
+        </div>
+        <div id = "band" class = "row">
+          <div id = "m1" class = "col-md-2">
+            <div class = "row name">MARK HULL</div>
+            <div class = "row instrument">guitar</div>
+            <div class = "row instrument">vocals</div>
+          </div>
+          <div class = "col-md-1"></div>
+          <div id = "m2" class = "col-md-2">
+            <div class = "row name">STEVE SLIVKOFF</div>
+            <div class = "row instrument">drums</div>
+            <div class = "row instrument"></div>
+          </div>
+          <div class = "col-md-1"></div>
+          <div id = "m3" class = "col-md-2">
+            <div class = "row name">JEFFERSON HANCOCK</div>
+            <div class = "row instrument">guitar</div>
+            <div class = "row instrument">vocals</div>
+          </div>
+          <div class = "col-md-1"></div>
+          <div id = "m4" class = "col-md-2">
+            <div class = "row name">ERIC MALMBERG</div>
+            <div class = "row instrument">bass</div>
+            <div class = "row instrument"></div>
+          </div>
+        </div>
+        <div class = "title row">
+          CLASSIC ROCK. &nbsp  BLUES. &nbsp  R&B.
+        </div>
+        <div id = "description">
+          Hailing from Aptos, in Santa Cruz County, California, Big Bad Wolf howls with a special off-the-beaten-path brand of tasty and danceable blues-based classic rock from groups and artists like Creedence, The Beatles, The Rolling Stones, Steely Dan, Jon Hiatt, John Fogerty, The Hollies, and many more. A party with The Big Bad Wolf is always a high octane, rip-roaring good time.
+        </div>
+      </div>
+
+      <div id = "events" class = "row">
+        <div class = "col">
+          <div class = "header row">
+            UPCOMING EVENTS
+          </div>
+          <div class = "row">
+            <div class = "col">
+              <div class="embed-responsive embed-responsive-16by9">
+                <iframe class = "embed-responsive-item" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FBigBadRockingWolf%2F&tabs=events&small_header=true&adapt_container_width=true&hide_cover=true&show_facepile=false&appId" class = "fb"  scrolling="no" allowTransparency="true" allow="encrypted-media"></iframe>
+              </div>
+            </div>           
+          </div>
+        </div>
+      </div>
+
+      <div id = "listen" class = "row">
+        <div class = "col">
+          <div class = "header row">
+            LISTEN
+          </div>
+          <div class = "row">
+            <div class = "col">
+              <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class = "embed-responsive-item" src="https://www.youtube.com/embed/ScHZLMY3ZS0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+            </div>
+            <div id = "soundcloud" class = "col-md-12">
+              <!--This is where we can embed soundcloud songs if you upload them -->
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id = "bookings" class = "row">
+        <div class = "col-md-12 ">
+          <div class = "header row">
+            BOOKINGS
+          </div>
+          
+          <div class = "row booking"> For booking inquiries, please contact &nbsp<span class = "contact-name">Some Person.</span></div>
+          <div class = "row"> <span class = "method">Email: &nbsp</span> <span class = "contact">bigbadwolf@whatever.com </span></div>
+          <div class = "row"> <span class = "method"> Phone: &nbsp</span> <span class = "contact">(888)888-5555 </span></div>
+        </div>
+      </div>
+      <div id = "email-list" class = "row">
+        <div class = "col">
+          <div class = "header row">
+              JOIN OUR EMAIL LIST
+          </div>
+          <div class = "row">
+            <div class = "col">
+              <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScNI0wmjjW7FGFKlv3LCKEefxdY0CbhUnsbExG6esvY3sOeYw/viewform?embedded=true" width="640" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class = "row bottom-space"> &nbsp</div>
+    </div>
+  </body>
+
+
+
+
+</html>
