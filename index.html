@@ -38,10 +38,7 @@
        #band-cover{
         padding-top: 20px;
        }
-       #spotify{
-        padding: 20px;
-       }
-       #description{
+       .description{
         color: #666666;
         font-size: 1.2rem;
         font-family: 'Questrial', sans-serif;
@@ -77,12 +74,19 @@
        .bottom-space{
         padding-bottom: 100px;
        }
-       .fb{
-        border:none;
-        overflow:hidden;
-       }
-
-
+       .embed-responsive-fb {
+        padding-left: -20px;
+        height: 200px;
+        }
+        .embed-responsive-form {
+        padding-top: 20px;
+        height: 900px;
+        }
+        .icons{
+          padding: 20px;
+          padding-left: 0px;
+          padding-bottom: 30px;
+        }
        .navbar {
           background-color: #000000;
         }
@@ -214,13 +218,14 @@
         }
 
     </style>
-
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    
     <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>
     <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
-    <link rel="stylesheet"
-          href="https://fonts.googleapis.com/css?family=Questrial">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Questrial">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <div id="fb-root"></div>
     <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v6.0"></script>
   </head>
@@ -249,6 +254,7 @@
           <li class="nav-item">
             <a class="nav-link" href="#email-list">EMAIL LIST</a>
           </li>
+
         </ul>
       </div>
     </div>
@@ -265,7 +271,7 @@
         <div id = "band" class = "row">
           <div id = "m1" class = "col-md-2">
             <div class = "row name">MARK HULL</div>
-            <div class = "row instrument">guitar</div>
+            <div class = "row instrument">guitar,</div>
             <div class = "row instrument">vocals</div>
           </div>
           <div class = "col-md-1"></div>
@@ -277,7 +283,7 @@
           <div class = "col-md-1"></div>
           <div id = "m3" class = "col-md-2">
             <div class = "row name">JEFFERSON HANCOCK</div>
-            <div class = "row instrument">guitar</div>
+            <div class = "row instrument">guitar,</div>
             <div class = "row instrument">vocals</div>
           </div>
           <div class = "col-md-1"></div>
@@ -290,7 +296,7 @@
         <div class = "title row">
           CLASSIC ROCK. &nbsp  BLUES. &nbsp  R&B.
         </div>
-        <div id = "description">
+        <div class = "description row">
           Hailing from Aptos, in Santa Cruz County, California, Big Bad Wolf howls with a special off-the-beaten-path brand of tasty and danceable blues-based classic rock from groups and artists like Creedence, The Beatles, The Rolling Stones, Steely Dan, Jon Hiatt, John Fogerty, The Hollies, and many more. A party with The Big Bad Wolf is always a high octane, rip-roaring good time.
         </div>
       </div>
@@ -300,10 +306,21 @@
           <div class = "header row">
             UPCOMING EVENTS
           </div>
-          <div class = "row">
+          <div class = "description row">
+            To find out about new events sign up for our email list and like us on Facebook! 
+          </div>
+          <div class = "icons row">
+            <div class = "col-md-2">
+              <a href="https://www.facebook.com/BigBadRockingWolf" target="_blank" class="btn btn-dark" role="button"><i class="fab fa-facebook-f pr-1"></i>&nbsp FACEBOOK</a>
+            </div>
+            <div class = "col-md-3">
+              <a href="#email-list" class="btn btn-dark" role="button"><i class="fas fa-envelope pr-1"></i>&nbsp JOIN EMAIL LIST</a>
+            </div>
+          </div>
+          <div class = "row short">
             <div class = "col">
-              <div class="embed-responsive embed-responsive-16by9">
-                <iframe class = "embed-responsive-item" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FBigBadRockingWolf%2F&tabs=events&small_header=true&adapt_container_width=true&hide_cover=true&show_facepile=false&appId" class = "fb"  scrolling="no" allowTransparency="true" allow="encrypted-media"></iframe>
+              <div class="embed-responsive embed-responsive-16by9 embed-responsive-fb">
+                <iframe class = "embed-responsive-item" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FBigBadRockingWolf%2F&tabs=events&small_header=true&adapt_container_width=true&hide_cover=true&show_facepile=false&appId" allow="encrypted-media"></iframe>
               </div>
             </div>           
           </div>
@@ -321,8 +338,13 @@
                     <iframe class = "embed-responsive-item" src="https://www.youtube.com/embed/ScHZLMY3ZS0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
               </div>
             </div>
-            <div id = "soundcloud" class = "col-md-12">
-              <!--This is where we can embed soundcloud songs if you upload them -->
+          </div>
+          <div class = "description row">
+            Check out our Youtube channel to hear more performances!
+          </div>
+          <div class = "icons row">
+            <div class = "col-md-2">
+              <a href="https://www.youtube.com/channel/UCm8OprIDaunjvIFqr0RTKcg/featured" target="_blank" class="btn btn-dark" role="button"><i class="fab fa-youtube pr-1"></i>&nbsp YOUTUBE</a>
             </div>
           </div>
         </div>
@@ -345,8 +367,11 @@
               JOIN OUR EMAIL LIST
           </div>
           <div class = "row">
-            <div class = "col">
-              <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScNI0wmjjW7FGFKlv3LCKEefxdY0CbhUnsbExG6esvY3sOeYw/viewform?embedded=true" width="640" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+            <div class = "col-md-5">
+              <div class="embed-responsive embed-responsive-16by9 embed-responsive-form">
+                <iframe class = "embed-responsive-item" src="https://docs.google.com/forms/d/e/1FAIpQLScNI0wmjjW7FGFKlv3LCKEefxdY0CbhUnsbExG6esvY3sOeYw/viewform?embedded=true" >
+                </iframe>
+              </div>
             </div>
           </div>
         </div>
